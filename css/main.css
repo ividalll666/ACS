@@ -140,7 +140,7 @@ body #banner span {
   color: #ef233c;
   font-weight: 800;
   outline: 1px solid #ef233c;
-  outline-offset: 20px;
+  outline-offset: 2rem;
   background: white;
   padding: 2%;
 }
@@ -332,5 +332,116 @@ body footer #emprego {
 body footer #emprego h1 {
   margin-bottom: 7%;
   width: 100%;
+}
+
+@media (max-width: 700px) {
+  html:root {
+    font-size: 2.5vw;
+  }
+  body #container-navbar img {
+    position: static;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform: translatey(10%);
+            transform: translatey(10%);
+  }
+  body #container-navbar #navbar .navbar-item {
+    width: 30%;
+    border-radius: 2px;
+    height: 100%;
+  }
+  body #container-navbar #navbar .sobre {
+    font-size: 1rem;
+    text-align: center;
+  }
+  body #banner span {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 70%;
+    text-align: center;
+  }
+  body .topico {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5%;
+  }
+  body .topico img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+  body .topico h1 {
+    right: 50%;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+  body .topico #especialidade {
+    right: 50%;
+  }
+  body #container-contato {
+    position: static;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  body #container-contato #contato {
+    background: #d90429;
+    padding: 2%;
+    width: 100%;
+    position: static;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  body #container-contato #contato .espera {
+    position: absolute;
+    right: 0%;
+    width: 20%;
+    top: -25%;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    outline: 1px solid white;
+    font-size: 2rem;
+    outline-offset: 10px;
+    background: #ef233c;
+    padding: 1% !important;
+    color: white;
+    text-align: center !important;
+  }
+  body #container-contato #contato .contato {
+    color: white;
+    width: 100%;
+    padding: 5%;
+    text-align: justify;
+  }
+  body #container-contato #contato h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  body #container-contato #contato .icons {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5%;
+  }
+  body #container-contato #contato-foto {
+    width: 100%;
+  }
+  body #container-contato #contato-foto img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*# sourceMappingURL=main.css.map */
