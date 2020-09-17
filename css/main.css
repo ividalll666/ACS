@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html:root {
+  font-size: 1vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'poppins';
+}
+
+body #container-navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background: #2b2d42;
+  padding: 1%;
+}
+
+body #container-navbar img {
+  width: 10%;
+  height: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+}
+
+body #container-navbar #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 1%;
+  background: #2b2d42;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container-navbar #navbar a {
+  text-decoration: none;
+}
+
+body #container-navbar #navbar .navbar-item + .navbar-item {
+  margin-left: 5%;
+}
+
+body #container-navbar #navbar .navbar-item {
+  padding: 1%;
+  color: white;
+  background: #ef233c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 50%;
+}
+
+body #container-navbar #navbar .navbar-item:before {
+  content: '';
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+body #container-navbar #navbar .navbar-item:hover:before {
+  height: 100%;
+  background: white;
+  z-index: -1;
+}
+
+body #container-navbar #navbar .navbar-item:hover {
+  z-index: 1;
+  color: #ef233c;
+}
+
+body #banner {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+body #banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #banner span {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: left;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #ef233c;
+  font-weight: 800;
+  outline: 1px solid #ef233c;
+  outline-offset: 20px;
+  background: white;
+  padding: 2%;
+}
+
+body .topico {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 5%;
+}
+
+body .topico img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+
+body .topico h1 {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  outline: 1px solid white;
+  outline-offset: 10px;
+  background: #ef233c;
+  padding: 2%;
+  color: white;
+}
+
+body .topico #especialidade {
+  right: 70%;
+}
+
+body .topico #especialidade-pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 30% !important;
+     object-position: 0% 30% !important;
+}
+
+body .sobre {
+  padding: 0% 5% 3% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+body .sobre h1 {
+  text-align: center;
+  background: #2b2d42;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 30%;
+  padding: 1%;
+}
+
+body .sobre p {
+  width: 100%;
+  text-align: justify;
+  font-weight: 700;
+}
+
+body .sobre h2 {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+}
+
+body .sobre ul {
+  width: 100%;
+  margin-left: 8%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+body #container-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  font-size: 2rem;
+  position: relative;
+}
+
+body #container-contato #contato {
+  background: #d90429;
+  padding: 2%;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #container-contato #contato .contato {
+  color: white;
+  width: 100%;
+}
+
+body #container-contato #contato h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+body #container-contato #contato .icons {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 5%;
+}
+
+body #container-contato #contato .icons i {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #container-contato #contato .icons i + i {
+  margin-left: 3%;
+}
+
+body #container-contato #contato .icons i:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  cursor: pointer;
+}
+
+body #container-contato #contato-foto {
+  width: 100%;
+}
+
+body #container-contato #contato-foto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2b2d42;
+  color: white;
+  padding: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer #parceiros {
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer #parceiros img {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+body footer #emprego {
+  font-size: 1.2rem;
+}
+
+body footer #emprego h1 {
+  margin-bottom: 5%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,250 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html:root
+    font-size: 1vw
+
+html
+    scroll-behavior: smooth
+
+$color-one: #d90429
+$color-two: #ef233c
+$color-three: #edf2f4
+$color-four: #8d99ae
+$color-five: #2b2d42
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+//-----------------------------
+
+body
+    font-family: 'poppins'
+
+    #container-navbar
+        width: 100%
+        display: flex
+        flex-direction: row-reverse
+        background: $color-five
+        padding: 1%
+        
+        img
+            width: 10%
+            height: 10%
+            object-fit: cover
+            clip-path: circle()
+            transform: translateX(80%)
+
+        #navbar
+            display: flex
+            width: 100%
+            justify-content: center
+            list-style: none    
+            padding: 1%
+            background: $color-five
+            align-items: center
+            
+            a
+                text-decoration: none
+
+            .navbar-item + .navbar-item 
+                margin-left: 5%
+
+            .navbar-item
+                padding: 1%
+                color: white
+                background: $color-two
+                border-radius: 10px
+                position: relative
+                overflow: hidden
+                cursor: pointer
+                height: 50%
+            
+            .navbar-item:before
+                content: ''
+                background: white
+                position: absolute
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 0%
+                transition: .35s
+
+            .navbar-item:hover:before
+                height: 100%
+                background: white
+                z-index: -1
+
+            .navbar-item:hover
+                z-index: 1
+                color: $color-two
+
+    #banner
+        height: 60vh
+        width: 100%
+        display: flex
+        justify-content: center
+        position: relative
+
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+        span
+            position: absolute
+            top: 50%
+            left: 10%
+            text-align: left
+            transform: translateY(-50%)
+            font-size: 2.5rem
+            // width: 40%
+            color: $color-two
+            font-weight: 800
+            outline: 1px solid $color-two
+            outline-offset: 20px    
+            background: white
+            padding: 2%
+
+    .topico
+        position: relative
+        width: 100%
+        height: 50vh
+        margin-bottom: 5%
+
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: 0% 0%
+
+        h1
+            position: absolute
+            right: 20%
+            top: 50%
+            outline: 1px solid white
+            outline-offset: 10px    
+            background: $color-two
+            padding: 2%
+            color: white
+
+        #especialidade
+            right: 70%
+
+        #especialidade-pic
+            object-fit: cover
+            object-position: 0% 30% !important
+
+
+    .sobre
+        padding: 0% 5% 3% 5%
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        font-size: 1.5rem
+        
+        h1
+            text-align: center
+            background: $color-five
+            color: white
+            margin-top: 3%
+            margin-bottom: 3%
+            width: 30%
+            padding: 1%
+
+        p
+            width: 100%
+            text-align: justify
+            font-weight: 700
+
+        h2
+            text-align: left
+            margin-left: 5%
+            margin-top: 3%
+            width: 100%
+
+        ul
+            width: 100%
+            margin-left: 8%
+            margin-top: 3% 
+            margin-bottom: 5%
+
+
+    #container-contato
+        display: flex
+        padding: 0
+        width: 100%
+        font-size: 2rem
+        position: relative
+
+        #contato
+            background: $color-one
+            padding: 2%
+            width: 70%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            .contato
+                color: white
+                width: 100%
+
+            h1
+                font-size: 4rem
+                text-align: center
+                margin-bottom: 5%
+
+            
+            .icons
+                font-size: 4rem
+                text-align: center
+                margin-top: 5%
+
+                i
+                    transition: .5s
+                
+                i + i
+                    margin-left: 3%
+
+
+            .icons i:hover
+                transform: scale(1.6)
+                cursor: pointer
+            
+
+        #contato-foto
+            width: 100%
+
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+    footer
+        display: flex
+        background: $color-five
+        color: white
+        padding: 5%
+        justify-content: center
+
+        #parceiros 
+            margin-right: 5%
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            img
+                width: 40%
+                height: 40%
+                margin-bottom: 5%
+                margin-top: 5%
+
+        #emprego
+            font-size: 1.2rem
+
+            h1
+                margin-bottom: 5%
