@@ -212,6 +212,7 @@ body .sobre h1 {
 
 body .sobre p {
   width: 100%;
+  text-justify: distribute;
   text-align: justify;
   font-weight: 700;
 }
@@ -268,16 +269,18 @@ body #container-contato #contato .icons {
   margin-top: 5%;
 }
 
-body #container-contato #contato .icons i {
+body #container-contato #contato .icons a {
   -webkit-transition: .5s;
   transition: .5s;
+  text-decoration: none;
+  color: white;
 }
 
-body #container-contato #contato .icons i + i {
+body #container-contato #contato .icons a + a {
   margin-left: 3%;
 }
 
-body #container-contato #contato .icons i:hover {
+body #container-contato #contato .icons a:hover {
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
   cursor: pointer;
@@ -331,6 +334,9 @@ body footer #parceiros img {
 
 body footer #emprego {
   font-size: 1.2rem;
+  text-align: justify;
+  text-justify: distribute;
+  width: 40%;
 }
 
 body footer #emprego h1 {
@@ -392,6 +398,12 @@ body footer #emprego h1 {
   body .topico #especialidade {
     right: 50%;
   }
+  body .topico #especialidade-pic {
+    -o-object-position: 80% !important;
+       object-position: 80% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   body #container-contato {
     position: static;
     -ms-flex-wrap: wrap;
@@ -426,6 +438,7 @@ body footer #emprego h1 {
     color: white;
     width: 100%;
     padding: 5%;
+    text-justify: distribute-all-lines;
     text-align: justify;
   }
   body #container-contato #contato h1 {

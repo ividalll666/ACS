@@ -164,6 +164,7 @@ body
 
         p
             width: 100%
+            text-justify: distribute
             text-align: justify
             font-weight: 700
 
@@ -211,14 +212,16 @@ body
                 text-align: center
                 margin-top: 5%
 
-                i
+                a
                     transition: .5s
-                
-                i + i
+                    text-decoration: none
+                    color: white
+
+                a + a
                     margin-left: 3%
 
 
-            .icons i:hover
+            .icons a:hover
                 transform: scale(1.6)
                 cursor: pointer
             
@@ -255,11 +258,14 @@ body
 
         #emprego
             font-size: 1.2rem
-
+            text-align: justify
+            text-justify: distribute
+            width: 40%
 
             h1
                 margin-bottom: 7%
                 width: 100%
+
 
 @media (max-width: 700px)
 
@@ -316,6 +322,11 @@ body
             #especialidade
                 right: 50%
 
+            #especialidade-pic
+                object-position: 80% !important
+                object-fit: cover
+
+
         #container-contato
             position: static
             flex-wrap: wrap
@@ -347,7 +358,9 @@ body
                     color: white
                     width: 100%
                     padding: 5%
-                    text-align: justify 
+                    text-justify: distribute-all-lines
+                    text-align: justify
+                
 
                 h1
                     font-size: 4rem
